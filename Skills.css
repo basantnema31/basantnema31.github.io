@@ -1,0 +1,75 @@
+div2 {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    max-height: 500px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.skills-grid {
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40rem;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-left: 20%;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    border-radius: 10px;
+    position: relative;
+}
+
+@property --deg {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+.skills-grid::before,
+.skills-grid::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--deg) at center,
+            #00c3ff,
+            #4d0199,
+            #6300c3,
+            #00c3ff);
+    border-radius: inherit;
+    z-index: -2;
+    padding: 2px;
+    animation: autoRotate 2s linear infinite;
+}
+
+@keyframes autoRotate {
+    to {
+        --deg: 360deg;
+    }
+}
+
+
+.skills-grid::after {
+    filter: blur(10px);
+}
+
+
+.skills-grid img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 50%;
+    padding: 0.5rem;
+    background-color: var(--skills-bg);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px #0ef
+}
