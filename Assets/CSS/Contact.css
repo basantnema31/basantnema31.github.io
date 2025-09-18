@@ -1,10 +1,17 @@
 .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
     margin-top: 230px;
+}
+
+@media screen and (max-width: 900px){
+    .contact{
+        flex-direction: column;
+    }
 }
 
 .contact-text h2 {
