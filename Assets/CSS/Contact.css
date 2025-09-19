@@ -128,6 +128,7 @@ form textarea {
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
+    cursor: pointer;
 }
 
 .contact-form form .send:hover {

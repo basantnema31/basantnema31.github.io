@@ -23,6 +23,12 @@
     height: 450px;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+    transition: transform 0.3s ease-out;
+    transform-origin: center;
+}
+
+.home img:hover {
+    transform: scale(1.01) !important;
 }
 
 .home-content {
