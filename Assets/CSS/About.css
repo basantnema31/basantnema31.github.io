@@ -4,6 +4,8 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    padding-top: 10vh;
+    justify-content: center;
 }
 
 .about-img {

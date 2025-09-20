@@ -1,3 +1,7 @@
+section {
+    scroll-margin-top: 70px; 
+}
+
 .home {
     position: relative;
     width: 100%;
@@ -11,6 +15,7 @@
     gap: 35px;
     align-items: center;
     padding: 70px 8% 5%;
+    padding-top: 0vh;
 }
 
 @media screen and (max-width: 768px){

@@ -10,11 +10,13 @@ div2 {
   height: auto;
   padding: 4rem 0;
   margin-top: 5rem; /* pushes Skills down */
+  padding-bottom: 10rem;
 }
 
 
 .skills-grid {
     justify-content: center;
+    justify-items: center;
     align-items: center;
     column-gap: 40rem;
     background-color: black;
